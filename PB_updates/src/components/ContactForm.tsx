@@ -26,13 +26,14 @@ const ContactForm = (props: ContactFormProps) => {
       event.target.reset
   } else { //if no ID to change, bring to 'create new contact'
       //use Dispatch to update state in our store
+      console.log(data)
       dispatch(chooseName(data.name));
       dispatch(chooseEmail(data.email));
       dispatch(chooseAddress(data.address));
       dispatch(choosePhone(data.phone_number));
 
-      server_calls.create(store.getState)
-      setTimeout(() => {window.location.reload()}, 1000)
+      server_calls.create(store.getState())
+      setTimeout(() => {window.location.reload()}, 10000)
   }
 }
 

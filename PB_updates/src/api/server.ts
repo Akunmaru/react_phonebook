@@ -1,25 +1,3 @@
-// let token = '961f94e351ca423b0fe686fc1ab55066b90084946af1dddc'
-
-// export const server_calls = {
-//     get: async () => {
-//         const response = await fetch(`http://woolly-fast-mammal.glitch.me/api/contacts`,
-//         {
-//             method: 'GET',
-//             mode: "cors",
-//             headers: {
-
-//             }
-
-//         });
-
-//         if (!response.ok) {
-//             throw new Error('Failed to fetch data from server')
-//         }
-
-//         return await response.json()
-//     }
-// }
-
 let token = '961f94e351ca423b0fe686fc1ab55066b90084946af1dddc'
 
 export const server_calls = {
