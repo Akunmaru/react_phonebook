@@ -18,9 +18,13 @@ function App() {
                 key={index}
                 path={route.path}
                 element={
+                  route.protected ? (
                   <AuthChecker>
                      <route.component />
                   </AuthChecker>
+                  ) :(
+                    <route.component/>
+                  )
                 }
                 />
             )) }
