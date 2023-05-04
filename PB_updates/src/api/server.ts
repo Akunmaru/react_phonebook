@@ -2,7 +2,7 @@ let token = '961f94e351ca423b0fe686fc1ab55066b90084946af1dddc'
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`http://woolly-fast-mammal.glitch.me/api/contacts`,{
+        const response = await fetch(`https://woolly-fast-mammal.glitch.me/api/contacts`,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const server_calls = {
     },
 
     create: async(data: any = {}) => {
-        const response = await fetch(`http://woolly-fast-mammal.glitch.me/api/contacts`,
+        const response = await fetch(`https://woolly-fast-mammal.glitch.me/api/contacts`,
         {
             method: 'POST',
             headers: {
@@ -39,7 +39,7 @@ export const server_calls = {
 
 
     update: async (id:string, data:any = {}) => {
-        const response = await fetch(`http://woolly-fast-mammal.glitch.me/api/contacts/${id}`, {
+        const response = await fetch(`https://woolly-fast-mammal.glitch.me/api/contacts/${id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ export const server_calls = {
 
 
     delete: async(id:string) => {
-        const response = await fetch(`http://woolly-fast-mammal.glitch.me/api/contacts/${id}`,{
+        const response = await fetch(`https://woolly-fast-mammal.glitch.me/api/contacts/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
